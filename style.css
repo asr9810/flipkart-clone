@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    background-color: #f1f3f6;
+    color: #212121;
+    line-height: 1.4;
+}
+
+:root{
+    --primary-color:#2874f0;
+}
+
+.container{
+    padding: 0 8px;
+}
+
+/* header section */
+header{
+    background-color: var(--primary-color);
+    height: 56px;
+    width: 100%;
+}
+header .nav-container{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    max-width: 1248px;
+    margin: 0 auto;
+}
+header .nav-container .logo{
+    display: flex;
+    min-width: 137px;
+    justify-content: flex-end;
+}
+header .nav-container .logo img{
+    width: 75px;
+}
+
+header .search{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 20px 0 12px;
+}
+
+header .search .search-container{
+    width: 540px;
+    height: 36px;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 23%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+
+}
+
+header .search .search-container input{
+
+    width: calc(100% - 32px);
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 0 16px;
+    
+}
+header .search .search-container button{
+    width: 36px;
+    height: 100%;
+    padding: 0 8px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    cursor: pointer;
+    padding: 4px 13px 0 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ header .login{
+    margin: 0 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+ }
+
+ header .login button{
+    width: 122px;
+    cursor: pointer;
+    padding: 5px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--primary-color);
+    background-color: #fff;
+    outline: none;
+    border: none;
+    height: 30px;
+ }
+
+ header .becomeASeller{
+    margin: 0 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    
+
+ }
+header .more{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    margin: 0 20px;
+    cursor: pointer;
+}
+header .more svg{
+    margin-left: 8px;
+    rotate: -90deg;
+}
+
+header .cart{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+header .cart svg{
+    margin-right: 8px;
+
+}
+
+/* Section-1*/
+.section-1{
+    width: 100%;
+    background-color: #fff;
+    height: 112.2px;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.16);
+    
+
+}
+.section-1-items{
+    width: 1280px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-1-Item{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+}
+
+.section-1-Item img{
+    width: 64px;
+    height: 64px;
+}
+
+
+/* section-2 */
+.section-2-container{
+    margin-top: 16px;
+    height: 280px;
+    background-image: url(https://rukminim1.flixcart.com/fk-p-flap/3376/560/image/0735712fe84c602d.jpg?q=50);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* section-3 */
+.section-3-container{
+    margin-top: 16px;
+    height: 122px;
+    background-image: url(https://rukminim1.flixcart.com/fk-p-flap/2848/246/image/d56a3ed6d200038a.jpg?q=50);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* section-4 */
+.section-4-container, .section-5-container{
+    margin-top: 16px;
+    height: 341.6px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.section-4-offers-img{
+    width: 230px;
+    height: 100%;
+    background-image: url(https://rukminim1.flixcart.com/fk-p-flap/278/278/image/7593e7b6640822c1.jpg?q=90);
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+
+}
+.section-4-offers-btn, .section-5-offers-btn{
+    padding: 70px 10px 124px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+.section-4-offers-h2, .section-5-offers-h2{
+    font-size: 30px;
+    font-weight: 400;
+}
+.section-4-offers-button, .section-5-offers-button{
+    margin-top: 24px;
+    width: 96px;
+    height: 38px;
+    background-color: #2874f0;
+    color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    font-size: 13px;
+    font-weight: 500px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+}
+/* section-4 items list */
+
+.section-4-list, .section-5-list{
+    height: 100%;
+    width: calc(100% - 230px);
+    display: flex;
+    overflow-x: auto;
+}
+
+.section-4-item, .section-5-item{
+   height: 100%;
+   /* padding: 0 15px; */
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   min-width: 232px;
+}
+.item-name{
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.item-amount{
+    font-size: 16px;
+    color: #388e3c;
+    padding-top: 8px;
+}
+.item-brands{
+    opacity: .6;
+    padding-top: 7px;
+}
+/* section-5 */
+
+.section-5-offers-img{
+    width: 230px;
+    height: 100%;
+    background-image: url(https://rukminim1.flixcart.com/fk-p-flap/278/278/image/b84f1c22cce1a6a3.jpg?q=90);
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+footer{
+    margin-top: 26px;
+    background-color: #ffff;
+    padding: 25px;
+    text-align: center;
+    font-size: 14px;
+    color: #878787;
+}
